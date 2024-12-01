@@ -50,6 +50,9 @@ do {
     print(error)
 }
 
+/// Optional try
+let value = try? itCanThrow()
+
 // MARK: Using `Result`
 
 /// The return type of this function is a `Result`.

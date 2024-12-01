@@ -23,9 +23,9 @@ let otherClosure: (String, Int) -> Bool = { question, age in
 otherClosure("Am I old?", Int.random(in: 0...99))
 
 /// Can be function's parameters. It will even be how you use closures most of the time.
-func emoji(for condition: (Int) -> Bool) {
+func emoji(for condition: (Int) -> Bool) -> String {
     let isTrue = condition(Int.random(in: 0...99))
-    isTrue ? "👍" : "👎"
+    return isTrue ? "👍" : "👎"
 }
 
 /// Normal syntax
